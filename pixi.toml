@@ -6,6 +6,15 @@ name = "readii-idc-notebooks"
 platforms = ["osx-arm64"]
 version = "0.1.0"
 
-[tasks]
-
 [dependencies]
+python = "3.12.*"
+ipywidgets = "*"
+ipykernel = "*"
+ipython = "*"
+pip = ">=24.3.1,<25"
+s5cmd = ">=2.2.2,<3"
+
+[pypi-dependencies]
+med-imagetools = ">=1.9.2, <2"
+readii = ">=1.17.0, <2"
+idc-index = ">=0.2.11, <0.3"
