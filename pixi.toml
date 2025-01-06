@@ -7,30 +7,17 @@ platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 
-[environments]
-fmcib = {features = ["fmcib"], no-default-feature = true}
-
 [dependencies]
-python = "3.12.*"
-ipykernel = ">=6.29.5,<7"
-pip = ">=24.3.1,<25"
-numpy = "1.26.4.*"
-python-dotenv = ">=1.0.1,<2"
-ipywidgets = ">=8.1.5,<9"
-
-[pypi-dependencies]
-readii = ">=1.30.0, <2"
-med-imagetools = ">=1.10.1, <2"
-
-[feature.fmcib.dependencies]
 python = "3.10.*"
 ipykernel = ">=6.29.5,<7"
 pip = ">=23.3.2,<24"
 python-dotenv = ">=1.0.1,<2"
 joblib = ">=1.4.2,<2"
 
-[feature.fmcib.pypi-dependencies]
+[pypi-dependencies]
 project-lighter = { version = "==0.0.2a19" }
-foundation-cancer-image-biomarker = ">=1.0.0, <2"
-med-imagetools = { path = "../med-imagetools", editable = true}
-readii = ">=1.26.0, <2"
+foundation-cancer-image-biomarker = ">=1.0, <2"
+
+med-imagetools = { path = "../repos/med-imagetools", editable = true }
+readii = { path = "../repos/readii", editable = true }
+readii_idc_notebooks = { path = ".", editable = true }
