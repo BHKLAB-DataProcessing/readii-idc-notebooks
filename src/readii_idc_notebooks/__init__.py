@@ -7,7 +7,7 @@ from typing import Generator, NamedTuple
 import pandas as pd
 from imgtools.autopipeline import ImageAutoInput
 from imgtools.io import read_image
-from imgtools.io.writers.nifti_writer import NiftiWriter
+from imgtools.io.writers.nifti_writer import NIFTIWriter
 from readii import loaders as rdloaders
 from readii.feature_extraction import generateNegativeControl
 from tqdm import tqdm
